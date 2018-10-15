@@ -15,6 +15,7 @@ var transporter = nodemailer.createTransport({
         pass: process.env.GMAIL_PASSWORD || config.gmail.password
     }
 });
+var value = false;
 
 app.set('view engine', 'ejs');
 app.use(express.static( "public"));
@@ -28,13 +29,27 @@ app.get('/video', function(req, res) {
 	res.render('home', {'data' : null});
 });
 
+app.get('/setTrue', function(req, res) {
+	value = true;
+	res.send(200);
+});
+
+app.get('/setFalse', function(req, res) {
+	value = false;
+	res.send(200);
+});
+
+app.get('/read', function(req, res) {
+	res.send(value, 200);
+});
+
 app.get('/send', function(req, res) {
 	var mailOptions = {
 		from: 'Octocare',
 		to: 'ed.arenberg@gmail.com, sarahjhan024@gmail.com, mischaleen@gmail.com, itsalwaysdns@gmail.com',
 		subject: 'Octocare',
 		text: 'Octocare',
-		html: '<style>body{background-color: grey;}h1{width:66%; margin:0px; color:#FFF; font-family: Arial; background-color:#337;}p{width:66%; margin:0px; color:#FFF;font-family: Arial;  background-color:#337;}.photo{width:66%; display:block}div{margin-left:23%}</style><a href="http://www.google.com/"><div class="outer"><img src="https://res.cloudinary.com/dhl3gjazr/image/upload/v1539575902/wayne-shorter/octocare.png" class="photo"></div></a>'
+		html: '<style>body{background-color: grey;}h1{width:66%; margin:0px; color:#FFF; font-family: Arial; background-color:#337;}p{width:66%; margin:0px; color:#FFF;font-family: Arial;  background-color:#337;}.photo{width:66%; display:block}div{margin-left:23%}</style><a href="https://octocare.herokuapp.com/"><div class="outer"><img src="https://res.cloudinary.com/dhl3gjazr/image/upload/v1539575902/wayne-shorter/octocare.png" class="photo"></div></a>'
 	};
 	transporter.sendMail(mailOptions, function(error, info){
 		if(error){
