@@ -21,6 +21,10 @@ app.use(express.static( "public"));
 app.use(express.static(path.join(__dirname, '/views')));
 
 app.get('/', function(req, res) {
+	res.render('index', {'data' : null});
+});
+
+app.get('/video', function(req, res) {
 	res.render('home', {'data' : null});
 });
 
