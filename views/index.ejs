@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="icon" href="img/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/styles.css" rel="stylesheet">
 </head>
@@ -24,7 +25,8 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand">
-                <img height="20" alt="Brand" src="img/logo.png">
+                <img height="20" alt="Brand"  style="display: inline-block"src="img/logo.png">
+                &nbsp;OctoCare
             </a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-ex-collapse">
@@ -33,7 +35,7 @@
                     <a href="#">Dashboard</a>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tricia Bella <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sydney Miller <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                     <li>
                         <a href="#">Profile</a>
@@ -57,172 +59,188 @@
         </div>
     </div>
 </div>
-  
-<div class="section" style="margin-top: 50px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-            <h1 class="text-center">Users</h1>
+
+<div class="container-fluid bg-pattern">
+    <div class="section" style="margin-top: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                <h1 class="text-center">Users</h1>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-            <ul class="breadcrumb">
-                <li>
-                <a href="#">Octocare Home</a>
-                </li>
-                <li>
-                <a href="#">Dashboard</a>
-                </li>
-                <li class="active">Users</li>
-            </ul>
-        </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 well">
-            <a class="btn btn-primary pull-right" data-toggle="modal" data-target="#usuario"><i class="fa fa-fw -square -circle fa-plus-square"></i> Create User</a>
+
+    <div class="container" style="background: white; margin-bottom: 100px;">
+        <div class="section">
+            <div class="">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="breadcrumb" style="margin-top: 16px;">
+                        <li>
+                        <a href="#">Octocare Home</a>
+                        </li>
+                        <li>
+                        <a href="#">Dashboard</a>
+                        </li>
+                        <li class="active">Users</li>
+                    </ul>
+                </div>
+                </div>
+                <div class="row mx-1">
+                    <div class="col-md-12 well">
+                    <a class="btn btn-primary pull-right" data-toggle="modal" data-target="#usuario"><i class="fa fa-fw -square -circle fa-plus-square"></i> Create User</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-            <table class="table table-hover table-striped">
-                <thead> 
-                <tr> 
-                    <th>Status</th> 
-                    <th>Activity</th> 
-                    <th>Name</th> 
-                    <th>Last Active</th>
-                    <th>Detail</th>
-                </tr> 
-                </thead>
-                <tbody>
-                <tr>
-                    <td>
-                    <span class="dot green"></span>
-                    </td>
-                    <td class="">
-                    <p>Active</p>
-                    <a href="#">
-                        <i class="fas fa-2x fa-user-alt"></i>
-                    </a>
-                    </td>
-                    <td>
-                    <h4>
-                        <b>Crystal Reece</b>
-                    </h4>
-                    <a href="mailto:ramonvillaw@gmail.com">crystalreece1004@gmail.com</a>
-                    </td>
-                    <td>
-                    <p>Today</p>
-                    </td>
-                    <td>
-                    <div class="btn-group">
-                        <button class="btn btn-default" value="left" type="button">
-                        <i class="fas fa-history"></i> History</button>
-                        <button class="btn btn-default" value="right" type="button">
-                        <i class="fas fa-user-md"></i> Information</button>
+        <div class="section">
+            <div class="">
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table table-hover table-striped">
+                            <thead> 
+                                <tr> 
+                                    <th>Status</th> 
+                                    <th>Activity</th> 
+                                    <th>Name</th> 
+                                    <th>Last Active</th>
+                                    <th>Detail</th>
+                                </tr> 
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="dot green">
+                                            <i class="fas fa-2x fa-check-square"></i>
+                                        </span>
+                                    </td>
+                                    <td class="">
+                                        <p>Active</p>
+                                        <a href="#">
+                                            <i class="fas fa-2x fa-user-alt"></i>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <h4>
+                                            <b>Crystal Reece</b>
+                                        </h4>
+                                        <a href="mailto:ramonvillaw@gmail.com">crystalreece1004@gmail.com</a>
+                                    </td>
+                                    <td>
+                                        <p>Today</p>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-default p-4" value="left" type="button">
+                                            <i class="fas fa-history"></i> History</button>
+                                            <button class="btn btn-default p-4" value="right" type="button">
+                                            <i class="fas fa-user-md"></i> Information</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
+                                            <span class="dot kaidan yellow">
+                                                <!-- <i class="fas fa-2x fa-check-square"></i> -->
+                                                <!-- <i class="fas fa-2x fa-square"></i> -->
+                                            </span>
+                                        </a>
+                                    </td>
+                                    <td class="">
+                                        <p>Active</p>
+                                        <a href="#">
+                                            <i class="fas fa-2x fa-user-alt"></i>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <h4>
+                                            <b>Kaidan Miller</b>
+                                        </h4>
+                                        <a href="">kaidanmiller@mail.com</a>
+                                    </td>
+                                    <td class="">
+                                        <p>Today</p>
+                                    </td>
+                                    <td>
+                                    <div class="btn-group">
+                                        <button class="btn btn-default p-4" value="left" type="button">
+                                        <i class="fas fa-history"></i> History</button>
+                                        <button class="btn btn-default p-4" value="right" type="button">
+                                        <i class="fas fa-user-md"></i> Information</button>
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="dot green">
+                                            <i class="fas fa-2x fa-check-square"></i>
+                                            <!-- <i class="fas fa-2x fa-square"></i> -->
+                                        </span>
+                                    </td>
+                                    <td class="">
+                                        <p>Active</p>
+                                        <a href="#">
+                                            <i class="fas fa-2x fa-user-alt"></i>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <h4>
+                                            <b>Krystian Webster</b>
+                                        </h4>
+                                        <a href="">kwebster@yahoo.com</a>
+                                    </td>
+                                    <td class="">
+                                        <p>Today</p>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-default p-4" value="left" type="button">
+                                            <i class="fas fa-history"></i> History</button>
+                                            <button class="btn btn-default p-4" value="right" type="button">
+                                            <i class="fas fa-user-md"></i> Information</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="dot red">
+                                            <!-- <i class="fas fa-2x fa-check-square"></i> -->
+                                            <!-- <i class="fa fa-2x fa-square"></i> -->
+                                        </span>
+                                    </td>
+                                    <td class="">
+                                        <p>Active</p>
+                                        <a href="#">
+                                            <i class="fas fa-2x fa-user-slash"></i>
+                                        </a>
+                                    </td>
+                                    <td>
+                                    <h4>
+                                        <b>Jakob Porter</b>
+                                    </h4>
+                                        <a href="mailto: jakob-porter@gmail.com"> jakob-porter@gmail.com</a>
+                                    </td>
+                                    <td class="">
+                                        <p>4 days ago</p>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-default p-4" value="left" type="button">
+                                                <i class="fas fa-history"></i> History
+                                            </button>
+
+                                            <button class="btn btn-default p-4" value="right" type="button">
+                                                <i class="fas fa-user-md"></i> Information
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    </td>
-                </tr>
-    <!--             <a href="#" data-toggle="modal" data-target="#myModal"> -->
-                <tr>
-                    <td>
-                    <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
-                        <span class="dot yellow"></span>
-                    </a>
-                    </td>
-                    <td class="">
-                    <p>Active</p>
-                    <a href="#">
-                        <i class="fas fa-2x fa-user-alt"></i>
-                    </a>
-                    </td>
-                    <td>
-                    <h4>
-                        <b>Kaidan Miller</b>
-                    </h4>
-                    <a href="">kaidanmiller@mail.com</a>
-                    </td>
-                    <td class="">
-                    <p>Today</p>
-                    </td>
-                    <td>
-                    <div class="btn-group">
-                        <button class="btn btn-default" value="left" type="button">
-                        <i class="fas fa-history"></i> History</button>
-                        <button class="btn btn-default" value="right" type="button">
-                        <i class="fas fa-user-md"></i> Information</button>
-                    </div>
-                    </td>
-                </tr>
-    <!--             </a> -->
-                <tr>
-                    <td>
-                    <span class="dot green"></span>
-                    </td>
-                    <td class="">
-                    <p>Active</p>
-                    <a href="#">
-                        <i class="fas fa-2x fa-user-alt"></i>
-                    </a>
-                    </td>
-                    <td>
-                    <h4>
-                        <b>Krystian Webster</b>
-                    </h4>
-                    <a href="">kwebster@yahoo.com</a>
-                    </td>
-                    <td class="">
-                    <p>Today</p>
-                    </td>
-                    <td>
-                    <div class="btn-group">
-                        <button class="btn btn-default" value="left" type="button">
-                        <i class="fas fa-history"></i> History</button>
-                        <button class="btn btn-default" value="right" type="button">
-                        <i class="fas fa-user-md"></i> Information</button>
-                    </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    <span class="dot red"></span>
-                    </td>
-                    <td class="">
-                    <p>Active</p>
-                    <a href="#">
-    <!--                   <i class="fas fa-2x fa-user-alt"></i> -->
-                        <i class="fas fa-2x fa-user-slash"></i>
-                    </a>
-                    </td>
-                    <td>
-                    <h4>
-                        <b>Jakob Porter</b>
-                    </h4>
-                    <a href="mailto: jakob-porter@gmail.com"> carlos@mail.com</a>
-                    </td>
-                    <td class="">
-                    <p>4 days ago</p>
-                    </td>
-                    <td>
-                    <div class="btn-group">
-                        <button class="btn btn-default" value="left" type="button">
-                        <i class="fas fa-history"></i> History</button>
-                        <button class="btn btn-default" value="right" type="button">
-                        <i class="fas fa-user-md"></i> Information</button>
-                    </div>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+                </div>
             </div>
         </div>
     </div>
@@ -231,77 +249,97 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h2 class="modal-title" id="myModalLabel">New User</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h2 class="modal-title" id="myModalLabel">New User</h2>
             </div>
             <div class="modal-body">
-            <form class="form-horizontal">
-                <fieldset>
-                <!-- Form Name -->
-                <!-- Prepended text-->
-                <div class="form-group">
-                    <label class="col-md-4 control-label" for="prependedtext">User</label>
-                    <div class="col-md-5">
-                    <div class="input-group">
-                        <span class="input-group-addon">@</span>
-                        <input id="prependedtext" name="prependedtext" class="form-control" placeholder="Username" type="text" required="">
+                <form class="form-horizontal">
+                    <fieldset>
+                    <!-- Form Name -->
+                    <!-- Prepended text-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="prependedtext">User</label>
+                        <div class="col-md-5">
+                            <div class="input-group">
+                                <span class="input-group-addon">@</span>
+                                <input id="prependedtext" name="prependedtext" class="form-control" placeholder="Username" type="text" required="">
+                            </div>
+                        </div>
                     </div>
+                    <!-- Prepended text-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="nombre">Name</label>
+                        <div class="col-md-5">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                <i class="fa fa-user"></i>
+                                </span>
+                                <input id="name" name="name" class="form-control" placeholder="Complete Name" type="text" required="">
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!-- Prepended text-->
-                <div class="form-group">
-                    <label class="col-md-4 control-label" for="nombre">Name</label>
-                    <div class="col-md-5">
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                        <i class="fa fa-user"></i>
-                        </span>
-                        <input id="name" name="name" class="form-control" placeholder="Complete Name" type="text" required="">
+                    <!-- Appended Input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="email">e-mail</label>
+                        <div class="col-md-5">
+                            <div class="input-group">
+                                <input id="email" name="email" class="form-control" placeholder="e-mail" type="email" required="">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                            </div>
+                        </div>
                     </div>
+                    <!-- Select Basic -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="departamento">Department</label>
+                        <div class="col-md-5">
+                            <select id="departamento" name="departamento" class="form-control">
+                                <option value="1">Systems</option>
+                                <option value="2">Systems</option>
+                                <option value="3">Systems</option>
+                                <option value="4">Systems</option>
+                                <option value="5">Systems</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <!-- Appended Input-->
-                <div class="form-group">
-                    <label class="col-md-4 control-label" for="email">e-mail</label>
-                    <div class="col-md-5">
-                    <div class="input-group">
-                        <input id="email" name="email" class="form-control" placeholder="e-mail" type="email" required="">
-                        <span class="input-group-addon">
-                        <i class="fa fa-envelope"></i>
-                        </span>
+                    <!-- File Button -->
+                    <!-- Password input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="password">Extra Notes</label>
+                        <div class="col-md-5">
+                            <input id="password" name="password" type="password" placeholder="Additional Information" class="form-control input-md" required="">
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fa fa-fw fa-save"></i>Save
+                        </button>
                     </div>
-                    </div>
-                </div>
-                <!-- Select Basic -->
-                <div class="form-group">
-                    <label class="col-md-4 control-label" for="departamento">Department</label>
-                    <div class="col-md-5">
-                    <select id="departamento" name="departamento" class="form-control">
-                        <option value="1">Systems</option>
-                        <option value="2">Systems</option>
-                        <option value="3">Systems</option>
-                        <option value="4">Systems</option>
-                        <option value="5">Systems</option>
-                    </select>
-                    </div>
-                </div>
-                <!-- File Button -->
-                <!-- Password input-->
-                <div class="form-group">
-                    <label class="col-md-4 control-label" for="password">Extra Notes</label>
-                    <div class="col-md-5">
-                    <input id="password" name="password" type="password" placeholder="Additional Information" class="form-control input-md" required="">
-                    </div>
-                    <button type="submit" class="btn btn-primary">
-                    <i class="fa fa-fw fa-save"></i>Save</button>
-                </div>
-                <!-- Button -->
-                </fieldset>
-            </form>
+                    <!-- Button -->
+                    </fieldset>
+                </form>
             </div>
         </div>
     </div>
 </div>
+
+<footer class="footer-divider my-5 py-5">
+    <div class="container">
+        <p class="pull-right">
+            <a href="#">
+                <!-- <img style="max-width:35px; color: black;" class="navbar-left pb-2" src="img/logo.png"> -->
+                Back to top
+            </a>
+        </p>
+        <span class="d-block strong">
+            <img style="max-width:35px; color: black;" class="navbar-left pb-2" src="img/logo.png">
+            <strong>Stock-o-matic</strong>
+        </span>
+        © 2018 · All Rights Reserved.
+        <span class="d-block">
+            <a href="#">Privacy</a> · <a href="#">Terms</a>
+        </span>
+    </div>
+</footer>
 
 <!-- modal -->
 <!-- <a type="button" class="" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</a> -->
@@ -311,44 +349,76 @@
     <div class="modal-dialog modal-lg" role="document"> 
         <div class="modal-content"> 
             <div class="modal-header"> 
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">×</span>
-                
-            </button> 
-            <h4 class="modal-title" id="myLargeModalLabel">Kaidan Miller</h4> 
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button> 
+                <h4 class="modal-title" id="myLargeModalLabel">Kaidan Miller</h4> 
             </div> 
-            <div class="modal-body"> 
+            <div class="modal-body text-center"> 
+                <h3>Care Circle</h3>
             
-            <div>
-                <span class="dot grey" data-toggle="tooltip" data-placement="top" title="Sergio Murillo"></span>
-                <span class="dot grey" data-toggle="tooltip" data-placement="top" title="Sydney Miller"></span>
-                <span class="dot grey" data-toggle="tooltip" data-placement="top" title="Tiffany Charles"></span>
-                <span class="dot yellow" data-toggle="tooltip" data-placement="top" title="Dakota Miller"></span>
-                <span class="dot green" data-toggle="tooltip" data-placement="top" title="Grace Smalls"></span>
-                <span class="dot green" data-toggle="tooltip" data-placement="top" title="Brian Miller"></span>
-            </div>
-            
-            <hr>
-            
-            <div class="text-center">
-                <button class="btn btn-info">Request Picture</button>
-                <button class="btn btn-info">Request Video Chat</button>
-            </div>
-            
-            <hr>
-            
-            <canvas class="my-4" id="myChart" width="900" height="380"></canvas>
+                <div>
+                    <span class="dot green" data-toggle="tooltip" data-placement="top" title="Grace Park">
+                        <!-- <i class="fas fa-2x fa-check-square"></i> -->
+                        <!-- <i class="fas fa-2x fa-square"></i> -->
+                    </span>
+                    <span class="dot green" data-toggle="tooltip" data-placement="top" title="Brandon Miller">
+                        <!-- <i class="fas fa-2x fa-check-square"></i> -->
+                    </span>
+                    <span class="dot sydney grey" data-toggle="tooltip" data-placement="top" title="Sydney Miller">
+                        <!-- <i class="fas fa-2x hidden fa-check-square"></i> -->
+                    </span>
+                    <span class="dot grey" data-toggle="tooltip" data-placement="top" title="Sergio Murillo">
+                        <i class="fas fa-2x hidden fa-check-square"></i>
+                    </span>
+                    <span class="dot grey" data-toggle="tooltip" data-placement="top" title="Tiffany Charles">
+                        <i class="fas fa-2x hidden fa-check-square"></i>
+                    </span>
+                    <span class="dot grey" data-toggle="tooltip" data-placement="top" title="Dakota Miller">
+                        <i class="fas fa-2x hidden fa-check-square"></i>
+                    </span>
+                </div>
+                
+                <hr>
+
+                <div>
+                    <h4>Description of Incident:</h4>
+                    <p>Unusual activity from fitness tracker</p>
+                </div>
+
+                <hr>
+
+                <div class="input-group mx-auto" style="width:50%">
+                    <input type="text" class="form-control" aria-describedby="basic-addon2" placeholder="Keep up the great work!">
+                    <span style="cursor:pointer;" class="input-group-addon" id="basic-addon2">send affirmation</span>
+                </div>
+
+                <hr>
+                
+                <div>
+                    <button class="btn btn-primary">Request Picture</button>
+                    <button class="btn btn-info"><a style="color:white; text-decoration: none;" href="http://octocare.herokuapp.com/video">Request Video Chat</a></button>
+                </div>
+                
+                <hr>
+                
+                <canvas class="my-4" id="myChart" width="900" height="300"></canvas>
+
+                <div>
+                    <button class="btn btn-primary" type="button" class="close" data-dismiss="modal" aria-label="Close" style="background:green">Accept</button>
+                    <button class="btn escalate btn-danger" type="button">Escalate</button>
+                </div>
             </div> 
         </div> 
     </div> 
 </div>
 
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
-  <!-- Graphs -->
+<!-- Graphs -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-<script type="text/javascript" src="js/app2.js"></script>
+<script src="js/app2.js"></script>
 <script>
     var ctx = document.getElementById("myChart");
     var myChart = new Chart(ctx, {
@@ -356,11 +426,11 @@
         data: {
         labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
         datasets: [{
-            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+            data: [10, 11, 15, 11, 10, 11, 12],
             lineTension: 0,
             backgroundColor: 'transparent',
             borderColor: '#007bff',
-            borderWidth: 4,
+            borderWidth: 5,
             pointBackgroundColor: '#007bff'
         }]
         },
